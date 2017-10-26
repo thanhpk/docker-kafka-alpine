@@ -1,4 +1,5 @@
 #!/bin/sh
+echo "\n" >> /opt/kafka/config/server.properties
 echo "listeners=PLAINTEXT://0.0.0.0:9092" >> /opt/kafka/config/server.properties
 echo "zookeeper.connect=$ZOOK" >> /opt/kafka/config/server.properties
 echo "auto.create.topics.enable=true" >> /opt/kafka/config/server.properties
